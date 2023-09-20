@@ -1,0 +1,196 @@
+/* font for heading */
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%    ;
+}
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+nav .logo p{
+    font-family: 'Kaushan Script', cursive; 
+    font-size: 70px;
+}
+nav li{
+    display: inline-block;
+    padding: 12px 20px 20px 0;
+    font-size: 23px;
+}
+
+.header{
+    top: 0;
+    position: sticky;
+    z-index: 1;
+}
+nav{
+    text-align: center;
+    border-bottom: 2px solid grey;
+    box-shadow: 4px 1px 10px;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    margin-bottom: 100px;
+}
+nav li a{
+    text-decoration: none;
+    color: black;
+}
+
+nav li a:hover{
+    color: white;
+    transition: all .1s ease-in;
+}
+
+.gallery{
+    display: flex;
+    margin: 30px;
+    justify-content: center;
+}
+
+.camera1{
+    border-radius: 20px;
+    box-shadow: 3px 5px 5px 3px grey;
+    height: 400px;
+    margin: 5px 6px 42px 7px;
+}
+.camera2{
+    border-radius: 20px;
+    box-shadow: 3px 5px 5px 3px grey;
+    height: 400px;
+    margin: 5px 127px 42px 111px;
+}
+.camera3{
+    border-radius: 20px;
+    box-shadow: 3px 5px 5px 3px grey;
+    height: 400px;
+    margin: 5px 6px 42px 7px;
+}
+.headphone1{
+    border-radius: 20px;
+    box-shadow: 3px 5px 5px 3px grey;
+    height: 400px;
+    margin: 5px 6px 42px 7px;
+}
+.headphone2{
+    border-radius: 20px;
+    box-shadow: 3px 5px 5px 3px grey;
+    height: 400px;
+    margin: 5px 6px 42px 7px;
+}
+.headphone3{
+    border-radius: 20px;
+    box-shadow: 3px 5px 5px 3px grey;
+    height: 400px;
+    margin: 5px 127px 42px 111px;
+}
+
+.headphone4{
+    border-radius: 20px;
+    box-shadow: 3px 5px 5px 3px grey;
+    height: 400px;
+    margin: 5px 6px 42px 7px;
+}
+.mobile1{
+    border-radius: 20px;
+    box-shadow: 3px 5px 5px 3px grey;
+    height: 400px;
+    margin: 5px 6px 42px 7px;
+}
+.mobile2{
+    border-radius: 20px;
+    box-shadow: 3px 5px 5px 3px grey;
+    height: 400px;
+    margin: 5px 127px 42px 111px;
+}
+.mobile3{
+    border-radius: 20px;
+    box-shadow: 3px 5px 5px 3px grey;
+    height: 400px;
+    margin: 5px 6px 42px 7px;
+}
+.mobile4{
+    border-radius: 20px;
+    box-shadow: 3px 5px 5px 3px grey;
+    height: 400px;
+    margin: 5px 6px 42px 7px;
+}
+.mobile5{
+    border-radius: 20px;
+    box-shadow: 3px 5px 5px 3px grey;
+    height: 400px;
+    margin: 5px 127px 42px 111px;
+}
+.shoe1{
+    border-radius: 20px;
+    box-shadow: 3px 5px 5px 3px grey;
+    height: 400px;
+    margin: 5px 6px 42px 7px;
+}
+.shoe2{
+    border-radius: 20px;
+    box-shadow: 3px 5px 5px 3px grey;
+    height: 400px;
+    margin: 5px 127px 42px 111px;
+}
+.shoe3{
+    border-radius: 20px;
+    box-shadow: 3px 5px 5px 3px grey;
+    height: 400px;
+    margin: 5px 6px 42px 7px;
+}
+.shoe4{
+    border-radius: 20px;
+    box-shadow: 3px 5px 5px 3px grey;
+    height: 400px;
+    margin: 5px 6px 42px 7px;
+}
+.watch1{
+    border-radius: 20px;
+    box-shadow: 3px 5px 5px 3px grey;
+    height: 400px;
+    margin: 5px 127px 42px 111px;
+}
+.watch2{
+    border-radius: 20px;
+    box-shadow: 3px 5px 5px 3px grey;
+    height: 400px;
+    margin: 5px 6px 42px 7px;
+}
+.watch3{
+    border-radius: 20px;
+    box-shadow: 3px 5px 5px 3px grey;
+    height: 400px;
+    margin: 5px 6px 42px 228px;
+}
+.watch4{
+    border-radius: 20px;
+    box-shadow: 3px 5px 5px 3px grey;
+    height: 400px;
+    margin: 5px 127px 42px 111px;
+}   
+
+.gototop {
+    position: fixed;
+    bottom: 10px;
+    left: 1460px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 50px;
+    background-color: aqua;
+}
+
+.gototop:hover {
+    background-color: rgb(222, 124, 206);
+}
+
+.images img:hover{
+    transform: scale(1.1);
+    transition: all .4s ease;
+}
