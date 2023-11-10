@@ -19,11 +19,12 @@
 
 <body>
     <header class="header">
+        <li class="list-btn"><i class="bi bi-x-lg"></i></li>
         <div class="logo">
             <p>Image Gallery</p>
         </div>
-        <nav>
-            <ul>
+        <nav class="navbar-l">
+            <ul class="center-list">
                 <li class="list active" data-filter="all">All</li>
                 <li class="list" data-filter="camera">Camera</li>
                 <li class="list" data-filter="headphone">Headphone</li>
@@ -31,13 +32,27 @@
                 <li class="list" data-filter="shoe">Shoes</li>
                 <li class="list" data-filter="watch">Watch</li>
             </ul>
-        </nav>
-        <nav class="toggle">
-            <i class="bi bi-moon-stars-fill" id="toggle-dark"></i>
-            <a href="https://github.com/GoofyExploit" target="_blank" class="github-link" style="color: #adb5bd;"><span class="tooltip">GitHub</span><i
-                    class="bi bi-github" id="git"></i></a>
-        </nav>
+            <ul>
+                <div class="dropdown-menu">
+                    <li class="list active" data-filter="all">All</li>
+                    <li class="list" data-filter="camera">Camera</li>
+                    <li class="list" data-filter="headphone">Headphone</li>
+                    <li class="list" data-filter="smartphone">Smartphone</li>
+                    <li class="list" data-filter="shoe">Shoes</li>
+                    <li class="list" data-filter="watch">Watch</li>
+                    <li> <a href="https://github.com/GoofyExploit" target="_blank" class="github-link"
+                            style="color: #adb5bd;"><span class="tooltip">GitHub</span><i class="bi bi-github"
+                                id="git"></i></a></li>
+                </div>
+            </ul>
 
+        </nav>
+        <nav>
+            <i class="bi bi-moon-stars-fill" id="toggle-dark"></i>
+            <a href="https://github.com/GoofyExploit" target="_blank" class="github-link"style="color: #adb5bd;"><span
+                    class="tooltip">GitHub</span><i class="bi bi-github" id="git"></i></a>
+        </nav>
+        
     </header>
 
 
@@ -82,25 +97,35 @@
             this.classList.toggle('bi-moon-stars-fill');
             if (this.classList.toggle('bi-brightness-high-fill')) {
                 body.style.background = 'white';
-                body.style.color = '#adb5bd';
+                body.style.color = '#212529';
                 body.style.transition = '.2s';
                 images.forEach(img => {
-                    img.style.borderColor = 'black'; 
+                    img.style.borderColor = 'black';
                 });
             } else {
                 body.style.background = '#212529';
-                body.style.color = '#adb5bd';
+                body.style.color = 'black';
                 body.style.transition = '.2s';
                 images.forEach(img => {
-                    img.style.borderColor = '#dee2e6'; 
+                    img.style.borderColor = '#dee2e6';
                 });
             }
-            
         });
     </script>
 
+    <script>
+        const toggleBtn = document.querySelector('.list-btn');
+        const toggleBtnIcon = document.querySelector('.list-btn i');
+        const dropDownMenu = document.querySelector('.dropdown-menu');
 
+        toggleBtn.addEventListener('click', function () {
+            const isOpen = dropDownMenu.classList.toggle('open');
 
+            toggleBtnIcon.classList = isOpen
+                ? 'bi bi-list'
+                : 'bi bi-x-lg';
+        });
+    </script>
 </body>
 
 </html>

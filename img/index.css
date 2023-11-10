@@ -1,3 +1,5 @@
+/* Image Gallery whole CSS */
+
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
@@ -17,6 +19,11 @@ body {
 
 #toggle-dark{
     color: #adb5bd;
+    margin-right: 13px;
+}
+
+.list-btn{
+    margin-left: 13px;
 }
 
 .toggle{
@@ -57,7 +64,8 @@ body {
 }
 
 .logo p {
-    font-family: 'Kaushan Script', cursive;
+    font-family: 'kaushan Script', sans-serif;
+    font-weight: bolder;
     font-size: 35px;
     color: #f8f9fa;
     padding-left: 80px;
@@ -131,6 +139,12 @@ nav {
     transition: transform 0.4s ease;
 }
 
+.list-btn{
+    display: none;
+    cursor: pointer;
+    color: white;
+}
+
 .gototop {
     position: fixed;
     bottom: 10px;
@@ -160,8 +174,9 @@ nav {
 
 .gototop {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 50px;
+    right: 100px;
+    left: 50px;
     cursor: pointer;
 }
 
@@ -188,6 +203,59 @@ nav {
     100% {
         opacity: 1;
         transform: scale(1);
+    }
+}
+
+/* Dropdown-menu CSS */
+
+.dropdown-menu{
+    position: absolute;
+    right: 2rem;
+    top: 80px;
+    width: 300px;
+    background-color: #712cf9;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    z-index: 2;
+    display: none;
+}
+
+.dropdown-menu.open{
+    height: 0px;
+}
+
+.dropdown-menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Image Gallery Responsive code */
+
+@media (max-width: 1086px) {
+    .center-list,
+    .github-link{
+        display: none;
+    }
+
+    p{
+       text-align: center;
+    }
+
+    .list-btn{
+        display: block;
+        position: relative;
+        z-index: 3;
+    }
+
+}
+
+@media (max-width: 1086px) {
+    .dropdown-menu{
+        left: 2rem;
+        width: unset;
+        display: block;
     }
 }
 
