@@ -9,52 +9,98 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+        integrity="sha384-xxsD2lAku97pLwnul7vH9RvTjaKd1N6wlMgry7mRbrUGidGQc0AqdLElKnEaCldC"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
     <title>Image Gallery</title>
 </head>
 
 <body>
     <header class="header">
+        <div class="logo">
+            <p>Image Gallery</p>
+        </div>
         <nav>
-            <div class="logo">
-                <p>Image Gallery</p>
-            </div>
-            <ul class="list">
-                <li><a href="#">All</a></li>
-                <li><a href="#">Smartphone</a></li>
-                <li><a href="#">Headphone</a></li>
-                <li><a href="#">Shoes</a></li>
-                <li><a href="#">Watch</a></li>
-                <li><a href="#">Camera</a></li>
+            <ul>
+                <li class="list active" data-filter="all">All</li>
+                <li class="list" data-filter="camera">Camera</li>
+                <li class="list" data-filter="headphone">Headphone</li>
+                <li class="list" data-filter="smartphone">Smartphone</li>
+                <li class="list" data-filter="shoe">Shoes</li>
+                <li class="list" data-filter="watch">Watch</li>
             </ul>
         </nav>
+        <nav class="toggle">
+            <i class="bi bi-moon-stars-fill" id="toggle-dark"></i>
+            <a href="https://github.com/GoofyExploit" target="_blank" class="github-link" style="color: #adb5bd;"><span class="tooltip">GitHub</span><i
+                    class="bi bi-github" id="git"></i></a>
+        </nav>
+
     </header>
+
+
     <div class="gallery">
-        <div class="images">
-            <img class="camera1" src="img/camera1.jpg" alt="camera1">
-            <img class="camera2" src="img/camera2.jpg" alt="camera2">
-            <img class="camera3" src="img/camera3.jpg" alt="camera3">
-            <img class="mobile1" src="img/mobile1.jpg" alt="mobile1">
-            <img class="mobile2" src="img/mobile2.jpg" alt="mobile2">
-            <img class="mobile3" src="img/mobile3.jpg" alt="mobile3">
-            <img class="mobile4" src="img/mobile4.jpg" alt="mobile4">
-            <img class="mobile5" src="img/mobile5.jpg" alt="mobile5">
-            <img class="headphone1" src="img/headphone1.jpg" alt="headphone1">
-            <img class="headphone2" src="img/headphone2.jpg" alt="headphone2">
-            <img class="headphone3" src="img/headphone3.jpg" alt="headphone3">
-            <img class="headphone4" src="img/headphone4.jpg" alt="headphone4">
-            <img class="shoe1" src="img/shoe1.jpg" alt="shoe1">
-            <img class="shoe2" src="img/shoe2.jpg" alt="shoe2">
-            <img class="shoe3" src="img/shoe3.jpg" alt="shoe3">
-            <img class="shoe4" src="img/shoe4.jpg" alt="shoe4">
-            <img class="watch1" src="img/watch1.jpg" alt="watch1">
-            <img class="watch2" src="img/watch2.jpg" alt="watch2">
-            <img class="watch3" src="img/watch3.jpg" alt="watch3">
-            <img class="watch4" src="img/watch4.jpg" alt="watch4">
-        </div>
     </div>
+
+
+    <div class="product">
+        <div class="itemBox" data-item="smartphone"><img src="img/mobile1.jpg" alt="mobile1"></div>
+        <div class="itemBox" data-item="camera"><img src="img/camera2.jpg" alt="camera2"></div>
+        <div class="itemBox" data-item="smartphone"><img src="img/mobile4.jpg" alt="mobile4"></div>
+        <div class="itemBox" data-item="camera"><img src="img/camera1.jpg" alt="camera1"></div>
+        <div class="itemBox" data-item="smartphone"><img src="img/mobile2.jpg" alt="mobile2"></div>
+        <div class="itemBox" data-item="headphone"><img src="img/headphone1.jpg" alt="headphone1"></div>
+        <div class="itemBox" data-item="camera"><img src="img/camera3.jpg" alt="camera3"></div>
+        <div class="itemBox" data-item="headphone"><img src="img/headphone2.jpg" alt="headphone2"></div>
+        <div class="itemBox" data-item="smartphone"><img src="img/mobile5.jpg" alt="mobile5"></div>
+        <div class="itemBox" data-item="headphone"><img src="img/headphone4.jpg" alt="headphone4"></div>
+        <div class="itemBox" data-item="shoe"><img src="img/shoe1.jpg" alt="shoe1"></div>
+        <div class="itemBox" data-item="headphone"><img src="img/headphone3.jpg" alt="headphone3"></div>
+        <div class="itemBox" data-item="shoe"><img src="img/shoe3.jpg" alt="shoe3"></div>
+        <div class="itemBox" data-item="watch"><img src="img/watch1.jpg" alt="watch1"></div>
+        <div class="itemBox" data-item="shoe"><img src="img/shoe2.jpg" alt="shoe2"></div>
+        <div class="itemBox" data-item="watch"><img src="img/watch2.jpg" alt="watch2"></div>
+        <div class="itemBox" data-item="shoe"><img src="img/shoe4.jpg" alt="shoe4"></div>
+        <div class="itemBox" data-item="watch"><img src="img/watch3.jpg" alt="watch3"></div>
+        <div class="itemBox" data-item="smartphone"><img src="img/mobile3.jpg" alt="mobile3"></div>
+        <div class="itemBox" data-item="watch"><img src="img/watch4.jpg" alt="watch4"></div>
+    </div>
+
     <div class="gototop">
-        <a href="#"><i class="fa-solid fa-arrow-up fa-bounce" style="color: black; width: 50px; height: 40px; margin-right: 50px;"></i></a>
+        <a href="#"><i class="fa-solid fa-arrow-up fa-bounce"
+                style="color: black; width: 50px; height: 40px; margin-right: 50px;"></i></a>
     </div>
+
+    <script>
+        const toggle = document.getElementById('toggle-dark');
+        const body = document.querySelector('body');
+        const images = document.querySelectorAll('.product .itemBox img');
+
+        toggle.addEventListener('click', function () {
+            this.classList.toggle('bi-moon-stars-fill');
+            if (this.classList.toggle('bi-brightness-high-fill')) {
+                body.style.background = 'white';
+                body.style.color = '#adb5bd';
+                body.style.transition = '.2s';
+                images.forEach(img => {
+                    img.style.borderColor = 'black'; 
+                });
+            } else {
+                body.style.background = '#212529';
+                body.style.color = '#adb5bd';
+                body.style.transition = '.2s';
+                images.forEach(img => {
+                    img.style.borderColor = '#dee2e6'; 
+                });
+            }
+            
+        });
+    </script>
+
+
+
 </body>
 
 </html>
