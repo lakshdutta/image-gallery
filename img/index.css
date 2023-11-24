@@ -75,8 +75,6 @@ body {
     cursor: pointer;
 }
 
-
-
 nav li {
     display: inline-block;
     padding: 12px 20px 20px 0;
@@ -162,11 +160,6 @@ nav {
     background-color: rgb(222, 124, 206);
 }
 
-.product img:hover {
-    transform: scale(1.1);
-    transition: all .4s ease;
-}
-
 .active {
     color: #fff;
     font-size: x-large;
@@ -185,6 +178,7 @@ nav {
     display: block;
     transition: transform 0.3s ease, opacity 0.3s ease;
     transform-origin: center;
+
 }
 
 .itemBox[data-item]:not([data-item="all"]) {
