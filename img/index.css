@@ -22,6 +22,18 @@ body {
     margin-right: 13px;
 }
 
+#login{
+    color: #adb5bd;
+    padding-right: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+#login:hover{
+    color: white;
+    transition: all .3s ease-in-out ;
+}
+
 .list-btn{
     margin-left: 13px;
 }
@@ -228,8 +240,7 @@ nav {
 /* Image Gallery Responsive code */
 
 @media (max-width: 1086px) {
-    .center-list,
-    .github-link{
+    .center-list{
         display: none;
     }
 
